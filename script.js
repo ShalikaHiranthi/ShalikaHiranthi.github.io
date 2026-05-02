@@ -37,8 +37,8 @@ const slides = [
   },
   {
     eyebrow: "Software Developer",
-    title: "Let's build something",
-    accent: "extraordinary together",
+    title: "Crafting digital experiences",
+    accent: "with code & creativity",
     desc: "Available for freelance projects and full-time roles. If you have a vision, I have the toolkit to bring it to life.",
     cta: "Tech Skills →",
     href: "#skills",
