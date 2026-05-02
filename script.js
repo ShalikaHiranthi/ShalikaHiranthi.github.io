@@ -22,7 +22,7 @@ const slides = [
   {
     eyebrow: "Full-Stack Developer",
     title: "I am ",
-    accent: "Shalika Hiranthi",
+    accent: "Shalika Hiranthi Dissanayaka",
     desc: "I build performant, accessible web applications with modern tools — from pixel-perfect interfaces to scalable backend systems.",
     cta: "View my work →",
     href: "#projects",

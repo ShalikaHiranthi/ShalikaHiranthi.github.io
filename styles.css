@@ -76,7 +76,15 @@ h2{font-size:clamp(2rem,4.5vw,3rem)}
   border:1px solid var(--border);display:inline-flex;align-items:center;justify-content:center;
   font-size:14px;transition:color .2s,transform .2s;
 }
-.circle-btn:hover{color:var(--neon-cyan);transform:scale(1.1)}
+.circlefull-btn{
+  padding: 10px; border-radius:999px;background:rgba(22,20,42,.55);
+  border:1px solid var(--border);display:inline-flex;align-items:center;justify-content:center;
+  font-size:14px;transition:color .2s,transform .2s;
+}
+.circle-btn:hover, .circlefull-btn:hover{color:var(--neon-cyan);transform:scale(1.1)}
+
+
+
 
 /* NAVBAR */
 #navbar{position:fixed;inset:0 0 auto 0;z-index:50;padding:20px 0;transition:all .4s}
