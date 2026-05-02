@@ -28,7 +28,7 @@ const slides = [
     href: "#projects",
   },
   {
-    eyebrow: "Product Engineer",
+    eyebrow: "Open to opportunities",
     title: "I am ",
     accent: "a Full-stack Developer",
     desc: "Turning ambitious concepts into shippable products. I love rapid iteration, clean architecture, and obsessing over the details.",
@@ -36,7 +36,7 @@ const slides = [
     href: "#about",
   },
   {
-    eyebrow: "Open to opportunities",
+    eyebrow: "Software Developer",
     title: "Let's build something",
     accent: "extraordinary together",
     desc: "Available for freelance projects and full-time roles. If you have a vision, I have the toolkit to bring it to life.",
