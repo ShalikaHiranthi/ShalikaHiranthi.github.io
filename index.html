@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shalika Dissanayaka — Full-Stack Developer & Product Engineer</title>
+<meta name="description" content="Portfolio of Shalika Dissanayaka, a full-stack developer crafting performant, beautiful web experiences." />
+<meta property="og:title" content="Shalika Dissanayaka — Full-Stack Developer" />
+<meta property="og:description" content="Crafting digital experiences with code & creativity." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <nav class="container nav">
+    <a href="#home" class="logo"><span class="text-gradient">&lt;SH/&gt;</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-gradient hire-btn">Hire me</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu glass">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-bg.jpg" alt="" />
+    <div class="hero-overlay"></div>
+    <div class="grid-bg"></div>
+  </div>
+  <div class="blob blob-cyan"></div>
+  <div class="blob blob-magenta"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-content" id="heroContent">
+      <span class="eyebrow"><span class="dot"></span><span id="heroEyebrow"></span></span>
+      <h1><span id="heroTitle"></span><br /><span class="text-gradient" id="heroAccent"></span></h1>
+      <p id="heroDesc"></p>
+      <div class="hero-cta">
+        <a id="heroCta" href="#projects" class="btn-gradient">View my work →</a>
+        <a href="#about" class="btn-glass">Learn more</a>
+      </div>
+    </div>
+
+    <div class="hero-controls">
+      <button id="prevSlide" class="circle-btn" aria-label="Previous">‹</button>
+      <div id="dots" class="dots"></div>
+      <button id="nextSlide" class="circle-btn" aria-label="Next">›</button>
+    </div>
+
+    <div class="socials-side">
+      <a href="https://github.com/ShalikaHiranthi" aria-label="GitHub" target="_blank">GH</a>
+      <a href="https://www.linkedin.com/in/shalika-dissanayaka-752847120/" aria-label="LinkedIn" target="_blank">IN</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="blob blob-purple about-blob"></div>
+  <div class="container about-grid">
+    <div class="about-image">
+      <div class="image-glow"></div>
+      <div class="neon-border image-wrap">
+        <img src="assets/dmsh.png" alt="Portrait of Shalika Dissanayaka" loading="lazy" />
+        <div class="image-fade"></div>
+        <div class="badge glass"><span class="green-dot"></span>Available for work</div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow-text">About me</span>
+      <h2>I'm <br /><span class="text-gradient">Shalika Dissanayaka</span></h2>
+      <p class="lead">A full-stack developer with over 4 years of experience building scalable and user-focused web applications using modern technologies such as React, Node.js, PHP, and Python. I have a strong background in developing responsive user interfaces, designing RESTful APIs, and working with database-driven systems.</p>
+      <p class="muted">Currently studying ICT in Finland, I am expanding my expertise in cloud technologies, Data analytics and AI-driven applications.</p>
+      <div class="stats" id="stats" style="display: none;">
+        <div class="stat glass"><div class="stat-num text-gradient" data-target="50" data-suffix="+">0+</div><div class="stat-label">Projects shipped</div></div>
+        <div class="stat glass"><div class="stat-num text-gradient" data-target="6" data-suffix="y">0y</div><div class="stat-label">Years experience</div></div>
+        <div class="stat glass"><div class="stat-num text-gradient" data-target="30" data-suffix="+">0+</div><div class="stat-label">Happy clients</div></div>
+        <div class="stat glass"><div class="stat-num text-gradient" data-target="18" data-suffix="k">0k</div><div class="stat-label">Cups of coffee</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow-text">What I do</span>
+      <h2>Tech <span class="text-gradient">stack & skills</span></h2>
+      <p class="muted">A toolkit built over years of shipping production software.</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee" id="marquee"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="projects-head">
+      <div>
+        <span class="eyebrow-text">Selected work</span>
+        <h2>Recent <span class="text-gradient">projects</span></h2>
+      </div>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="grid-bg contact-grid-bg"></div>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow-text">Get in touch</span>
+      <h2>Let's <span class="text-gradient">work together</span></h2>
+      <p class="muted">Have a project in mind? Drop me a message.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card glass"><div class="info-label">Email</div><div>ag1640@student.jamk.fi</div></div>
+        <div class="info-card glass"><div class="info-label">Phone</div><div>+358 41741 0499</div></div>
+        <div class="info-card glass"><div class="info-label">Location</div><div>Jyväskylä, Finland</div></div>
+        <div class="socials-row">
+          <a href="https://github.com/ShalikaHiranthi" target="_blank" class="circle-btn">GH</a>
+          <a href="https://www.linkedin.com/in/shalika-dissanayaka-752847120/" target="_blank" class="circle-btn">IN</a>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form neon-border">
+        <div class="row">
+          <input required name="name" id="name" placeholder="Your name" />
+          <input required type="email" name="email" id="email" placeholder="Your email" />
+        </div>
+        <input required name="subject" id="subject" placeholder="Subject" />
+        <textarea required name="message" id="message" rows="5" placeholder="Your message..."></textarea>
+        <button type="submit" class="btn-gradient" id="submitBtn">Send message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="text-gradient logo">&lt;SH/&gt;</div>
+    <p class="muted">© <span id="year"></span> Shalika Dissanayaka. Crafted with code & coffee.</p>
+  </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("TimwpzXacubpoqfOn");
+  })();
+</script>
+<script>
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const toast = document.getElementById("toast");
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.send("service_yvseg88", "template_iaumrzh", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  })
+  .then(function(response) {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send message →";
+    form.reset();
+    toast.innerHTML = `<strong>Message sent!</strong><small>I'll get back to you within 24 hours.</small>`;
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 4000);
+  }, function(error) {
+    submitBtn.textContent = "Failed to send message. Try again.";
+  });
+});
+</script>
+</body>
+</html>
