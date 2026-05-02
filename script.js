@@ -40,8 +40,8 @@ const slides = [
     title: "Let's build something",
     accent: "extraordinary together",
     desc: "Available for freelance projects and full-time roles. If you have a vision, I have the toolkit to bring it to life.",
-    cta: "Get in touch →",
-    href: "#contact",
+    cta: "Tech Skills →",
+    href: "#skills",
   },
 ];
 let idx = 0;
