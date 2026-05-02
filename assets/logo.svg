@@ -1,24 +1,12 @@
-<svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#6366f1" /> <!-- Replace with your colors -->
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#6366f1" />
-      
-      <animate attributeName="x1" from="0%" to="-100%" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="x2" from="200%" to="100%" dur="6s" repeatCount="indefinite" />
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
     </linearGradient>
   </defs>
-  
-  <text 
-    x="50%" 
-    y="55%" 
-    text-anchor="middle" 
-    dominant-baseline="middle" 
-    font-family="monospace, Courier" 
-    font-weight="bold" 
-    font-size="40" 
-    fill="url(#hero-gradient)">
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" 
+        font-family="monospace" font-weight="bold" font-size="35" fill="url(#g)">
     &lt;SH/&gt;
   </text>
 </svg>
