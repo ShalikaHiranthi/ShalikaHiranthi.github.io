@@ -21,16 +21,16 @@ mobileMenu
 const slides = [
   {
     eyebrow: "Full-Stack Developer",
-    title: "Crafting digital experiences",
-    accent: "with code & creativity",
+    title: "I am ",
+    accent: "Shalika Hiranthi",
     desc: "I build performant, accessible web applications with modern tools — from pixel-perfect interfaces to scalable backend systems.",
     cta: "View my work →",
     href: "#projects",
   },
   {
     eyebrow: "Product Engineer",
-    title: "From idea to production",
-    accent: "shipping fast, shipping right",
+    title: "I am ",
+    accent: "a Full-stack Developer",
     desc: "Turning ambitious concepts into shippable products. I love rapid iteration, clean architecture, and obsessing over the details.",
     cta: "About me →",
     href: "#about",
