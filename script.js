@@ -287,16 +287,16 @@ const experience = [
     company: "Prostyle Technology Pvt Ltd",
     period: "2022/10 — 2024/08",
     description:
-      "Worked as a Full-Stack Software Engineer developing scalable web applications using PHP, JavaScript, and MySQL/NoSQL databases. Built RESTful APIs, improved system performance, and contributed to UI enhancements while ensuring security and maintainability across production systems in an Agile environment.",
-    tags: ["PHP", "JavaScript", "NoSQL", "HTML", "CSS"],
+      "Developed and maintained scalable full-stack web applications using PHP, JavaScript, and MySQL/NoSQL. Improved system performance and UI responsiveness while ensuring security and scalability across production systems. Integrated third-party APIs and handled rate limits, error handling, and fallback mechanisms to ensure system reliability.",
+    tags: ["PHP", "JavaScript", "NoSQL", "API Integration"],
   },
   {
     role: "Software Engineer",
     company: "Lanka Property Web Pvt Ltd",
     period: "2020/09 — 2022/10",
     description:
-      "Developed web applications using PHP frameworks like Laravel and CodeIgniter, along with JavaScript and MySQL. Built and integrated REST APIs, worked on CMS solutions such as WordPress, and improved frontend performance and responsiveness for better user experience.",
-    tags: ["PHP", "JavaScript", "HTML", "CSS", "WordPress"],
+      "Developed web applications using PHP frameworks (Laravel, CodeIgniter), JavaScript, and MySQL. Designed, built, and integrated RESTful APIs for web and CMS-based systems, including WordPress integrations. Improved frontend performance and responsiveness, enhancing overall user experience and system usability.",
+    tags: ["PHP", "JavaScript", "MySQL", "REST API", "WordPress"],
   },
   {
     role: "Associate Software Engineer",
