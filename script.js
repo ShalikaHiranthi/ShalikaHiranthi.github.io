@@ -273,6 +273,88 @@ function renderProjects() {
 }
 renderProjects();
 
+const experience = [
+  {
+    role: "Full-Stack Developer",
+    company: "KYKY Today Oy",
+    period: "2026/04 — Present",
+    description:
+      "Currently working as a Full-Stack Developer Intern in Finland, building web application features using React and TypeScript. I work with Firebase services including Firestore, Authentication, and Cloud Functions, and handle API integration and state management using Redux Toolkit. I collaborate in an Agile team, contributing to development, debugging, and code improvements in a real production environment.",
+    tags: ["React", "TypeScript", "Tailwind", "Firebase"],
+  },
+  {
+    role: "Full-Stack Software Engineer",
+    company: "Prostyle Technology Pvt Ltd",
+    period: "2022/10 — 2024/08",
+    description:
+      "Worked as a Full-Stack Software Engineer developing scalable web applications using PHP, JavaScript, and MySQL/NoSQL databases. Built RESTful APIs, improved system performance, and contributed to UI enhancements while ensuring security and maintainability across production systems in an Agile environment.",
+    tags: ["PHP", "JavaScript", "NoSQL", "HTML", "CSS"],
+  },
+  {
+    role: "Software Engineer",
+    company: "Lanka Property Web Pvt Ltd",
+    period: "2020/09 — 2022/10",
+    description:
+      "Developed web applications using PHP frameworks like Laravel and CodeIgniter, along with JavaScript and MySQL. Built and integrated REST APIs, worked on CMS solutions such as WordPress, and improved frontend performance and responsiveness for better user experience.",
+    tags: ["PHP", "JavaScript", "HTML", "CSS", "WordPress"],
+  },
+  {
+    role: "Associate Software Engineer",
+    company: "NSOFT Pvt Ltd",
+    period: "2020/05 — 2020/09",
+    description:
+      "Built and enhanced web applications using PHP (CodeIgniter), HTML, CSS, Bootstrap, and JavaScript. Developed responsive UI components and improved user experience while maintaining clean and reusable codebases.",
+    tags: ["PHP", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    role: "Associate Software Engineer",
+    company: "IDEAL SOFT Pvt Ltd",
+    period: "2019/11 — 2020/05",
+    description:
+      "Worked as a full-stack developer using Angular, React, Node.js, and PHP. Contributed to backend services, system architecture, and database integration using MySQL and NoSQL while building and maintaining scalable applications.",
+    tags: ["Angular", "Node.js", "JavaScript", "MySQL", "PHP", "WordPress"],
+  },
+];
+
+(function renderTimeline() {
+  const root = document.getElementById("timeline");
+  if (!root) return;
+
+  root.innerHTML = experience
+    .map(
+      (job) => `
+    <article class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">${job.period}</div>
+        <h3 class="timeline-role">${job.role}</h3>
+        <div class="timeline-company">${job.company}</div>
+        <p class="timeline-desc">${job.description}</p>
+        <div class="timeline-tags">
+          ${job.tags.map((t, i) => `<span class="tag">${t}${i !== job.tags.length - 1 ? " . " : ""}</span>`).join("")}
+        </div>
+      </div>
+    </article>
+  `,
+    )
+    .join("");
+
+  // reveal on scroll
+  const items = root.querySelectorAll(".timeline-item");
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-visible");
+          io.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.15 },
+  );
+  items.forEach((el) => io.observe(el));
+})();
+
 // ===== Contact form =====
 // const form = document.getElementById("contactForm");
 // const submitBtn = document.getElementById("submitBtn");
